@@ -242,6 +242,7 @@ have_func('xmlRelaxNGSetParserStructuredErrors')
 have_func('xmlRelaxNGSetValidStructuredErrors')
 have_func('xmlSchemaSetValidStructuredErrors')
 have_func('xmlSchemaSetParserStructuredErrors')
+have_var('xmlStructuredErrorContext', ['libxml/globals.h'])
 
 if ENV['CPUPROFILE']
   unless find_library('profiler', 'ProfilerEnable', *LIB_DIRS)
